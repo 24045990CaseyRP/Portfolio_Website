@@ -1,0 +1,24 @@
+{
+  "name": "casey-pek-portfolio",
+  "version": "1.0.0",
+  "description": "Modern portfolio website for Casey Pek - Aspiring Web Developer",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 8000 -o",
+    "start": "npx http-server -p 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "personal-website"
+  ],
+  "author": "Casey Pek",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "gsap": "^3.14.2",
+    "sharp": "^0.34.5"
+  }
+}
