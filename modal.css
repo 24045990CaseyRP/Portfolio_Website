@@ -158,6 +158,12 @@
 }
 
 @media (max-width: 768px) {
+    .modal-hero {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        margin-top: 60px;
+    }
+
     .modal-details {
         grid-template-columns: 1fr;
         gap: 2rem;
