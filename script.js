@@ -53,6 +53,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 const projectsData = [
     {
+        title: "Learn@RP Redesign",
+        category: "Mobile UX/UI Design",
+        description: "A gamified mobile learning experience reworking the traditional PBL cycle into engaging daily quests.",
+        longDescription: "Learn@RP is a high-fidelity mobile redesign aimed at transforming the student learning experience at Republic Polytechnic. By reimagining the traditional Problem-Based Learning (PBL) cycle as a gamified microlearning journey, it helps students master complex technical modules through achievable \"Daily Quests\" and interactive blocks.<br><br>Key innovations include the \"Ignite\" Achievement system—a dynamic fire emote that reacts to progress—and logic-gated learning paths built with Figma variables. The interface features a professional tech-themed design system with smart navigation and dark mode support, explicitly tailored for the RP term structure.<br><br><strong>Technology Stack & Tools</strong><br>• <strong>Design & Prototyping:</strong> Figma (Advanced Variables, Conditionals, Component Properties).<br>• <strong>Visual Design:</strong> UI/UX Heuristics, Vector Tracing, and High-Fidelity Design Systems.<br>• <strong>Domain Context:</strong> Microlearning, Gamification, and Problem-Based Learning (PBL) workflows.",
+        features: [
+            "Gamified PBL Daily Quests with 'Ignite' Visual Feedback",
+            "Logic-Gated Progress & Interactive Lesson Blocks",
+            "Smart Navigation with Preserved Scroll & Skill Badging",
+            "Comprehensive Design System with Dark Mode & Micro-interactions"
+        ],
+        image: "assets/Images/learn-rp/learn-rp-redesign.webp",
+        tags: ["Figma", "UI/UX", "Gamification", "Mobile Design"],
+        year: "2025",
+        duration: "Ongoing",
+        links: {
+            live: "https://www.figma.com/design/6qAa0Rls2KUC2JzLCIIO1k/Casey-24045990-Learn-RP-App?node-id=42-72&t=rEUqtQ3srmiXhU9C-1",
+            github: "#"
+        }
+    },
+    {
         title: "VR Escape Room",
         category: "Immersive Technologies",
         description: "An immersive, four-stage virtual reality escape room designed to test cognitive and spatial problem-solving skills.",
