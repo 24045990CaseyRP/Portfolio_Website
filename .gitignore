@@ -21,3 +21,6 @@ npm-debug.log*
 
 # Vercel
 .vercel
+
+create_gif.py
+create_sg_gif.py

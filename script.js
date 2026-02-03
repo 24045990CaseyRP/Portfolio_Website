@@ -55,6 +55,7 @@ const projectsData = [
     {
         title: "Learn@RP Redesign",
         category: "Mobile UX/UI Design",
+        type: "design",
         description: "A gamified mobile learning experience reworking the traditional PBL cycle into engaging daily quests.",
         longDescription: "Learn@RP is a high-fidelity mobile redesign aimed at transforming the student learning experience at Republic Polytechnic. By reimagining the traditional Problem-Based Learning (PBL) cycle as a gamified microlearning journey, it helps students master complex technical modules through achievable \"Daily Quests\" and interactive blocks.<br><br>Key innovations include the \"Ignite\" Achievement system—a dynamic fire emote that reacts to progress—and logic-gated learning paths built with Figma variables. The interface features a professional tech-themed design system with smart navigation and dark mode support, explicitly tailored for the RP term structure.<br><br><strong>Technology Stack & Tools</strong><br>• <strong>Design & Prototyping:</strong> Figma (Advanced Variables, Conditionals, Component Properties).<br>• <strong>Visual Design:</strong> UI/UX Heuristics, Vector Tracing, and High-Fidelity Design Systems.<br>• <strong>Domain Context:</strong> Microlearning, Gamification, and Problem-Based Learning (PBL) workflows.",
         features: [
@@ -66,7 +67,7 @@ const projectsData = [
         image: "assets/Images/learn-rp/learn-rp-redesign.webp",
         tags: ["Figma", "UI/UX", "Gamification", "Mobile Design"],
         year: "2025",
-        duration: "Ongoing",
+        duration: "Completed",
         links: {
             live: "https://www.figma.com/design/6qAa0Rls2KUC2JzLCIIO1k/Casey-24045990-Learn-RP-App?node-id=42-72&t=rEUqtQ3srmiXhU9C-1",
             github: "#"
@@ -75,6 +76,7 @@ const projectsData = [
     {
         title: "VR Escape Room",
         category: "Immersive Technologies",
+        type: "ar-vr",
         description: "An immersive, four-stage virtual reality escape room designed to test cognitive and spatial problem-solving skills.",
         longDescription: "Step into a fully immersive Virtual Reality escape room experience. This project was developed to push the boundaries of interactive storytelling and spatial puzzle design. Players navigate through four distinct stages, each introducing unique mechanics—from physics-based interactions to logic puzzles. <br><br>The environment was carefully crafted in Unity to ensure performance while maintaining high visual fidelity on VR headsets. The core mechanic relies on natural user interactions (grabbing, throwing, pulling) rather than abstract button presses, increasing the sense of presence.",
         features: [
@@ -94,8 +96,31 @@ const projectsData = [
         }
     },
     {
+        title: "AR Business Card",
+        category: "Augmented Reality",
+        type: "ar-vr",
+        description: "An interactive AR business card that bridges the physical and digital worlds, allowing users to seamlessly connect via social links.",
+        longDescription: "This mini-project explores the potential of Augmented Reality for personal branding. By scanning a physical name card, 3D avatars and interactive elements 'pop out' on the digital screen to create a memorable networking experience.<br><br>A key usability feature is the smart QR code system: instead of struggling to scan small codes on the card, the app detects the card and digitally projects and enlarges the QR codes, ensuring reliable and fast connections to social profiles.",
+        features: [
+            "Real-time Image Target tracking for precise digital overlays",
+            "Interactive 3D Avatar and item pop-outs",
+            "Smart QR Code enlargement for optimized scanning",
+            "Seamless integration of Unity & Image Targets"
+        ],
+        video: "assets/Images/Vr-name-card/CA1_Recording.mp4",
+        image: "assets/Images/Vr-name-card/ImageTargetUsedForCA1.png",
+        tags: ["Unity", "Image Targets", "AR", "C#"],
+        year: "2025",
+        duration: "1-2 Weeks",
+        links: {
+            live: "#",
+            github: "#"
+        }
+    },
+    {
         title: "E-Commerce Web - EcoThread",
         category: "UI/UX Design",
+        type: "design",
         description: "A complete sustainability e-commerce website flow. Enables customers to browse, purchase items, and proceed through a streamlined checkout process.",
         longDescription: "This high-fidelity Figma prototype outlines the comprehensive user experience for a mobile e-commerce fashion website, focusing on both transactional efficiency and brand narrative. The design encompasses a complete shopping flow, including a main Home Page for product discovery, a Products Page for browsing, detailed Product Details Pages for selection, and a streamlined Cart Page leading to the Order Details Pop-up for checkout confirmation.<br><br>Furthermore, a dedicated \"Our Story Page\" is included to build brand identity by detailing company values and commitments, while a \"Welcome to the Community\" Pop-up on the home page focuses on lead generation. Overall, the prototype is production-ready, featuring realistic visuals, typography, and clear layouts across all stages of the customer journey.",
         features: [
@@ -117,6 +142,7 @@ const projectsData = [
     {
         title: "Mobile Task Manager",
         category: "Mobile Development",
+        type: "mobile-app",
         description: "Capture tasks, categorize, and organize with powerful features. Visualize productivity on a dashboard with precise progress tracking.",
         longDescription: "This project involved the development of a full-stack Task List Manager application designed to boost user productivity through a seamless and organized platform. The application provides essential CRUD (Create, Read, Update, Delete) functionality for managing tasks, complete with features such as prioritization, status tracking, and date assignment.<br><br>Technically, it leverages modern frontend technology for a dynamic UI and secure data persistence, successfully demonstrating proficiency in building a complete, authenticated, and responsive task management solution.",
         features: [
@@ -136,8 +162,53 @@ const projectsData = [
         }
     },
     {
+        title: "SG Green Plan",
+        category: "Mobile Application",
+        type: "mobile-app",
+        description: "A team-developed mobile app for managing recycling points in Singapore, featuring secure role-based access and activity tracking.",
+        longDescription: "SG Green Plan is a mobile solution supporting Singapore's sustainability initiative by connecting users with recycling infrastructure. Users can locate drop-off points, verify accepted materials, and log their eco-friendly contributions.<br><br><strong>My Role: Backend & Auth Developer</strong><br>I architected the entire backend ecosystem for this team project. My key contributions included designing the RESTful API to handle complex data relationships (Points, Logs, Users), managing the database, and implementing secure JWT-based authentication. I also built the full-stack logic for user registration and login, ensuring a secure and seamless experience for both general users and administrators.",
+        features: [
+            "Secure JWT Authentication (User & Admin Roles)",
+            "Real-time Recycling Point Status & Management",
+            "Personal Activity Logging & History View",
+            "Comprehensive REST API with Render Deployment"
+        ],
+        image: "assets/Images/sg-green-plan/home.gif",
+        tags: ["Mobile App", "Express.js", "Navigation", "CRUD"],
+        year: "2025",
+        duration: "2 Weeks",
+        links: {
+            live: "#",
+            github: "https://github.com/C346-AY2025-002/c346-ca2-ca2_team10",
+            github_server: "https://github.com/24045990CaseyRP/sg_green_plan_server"
+        }
+    },
+    {
+        title: "Campus Pulse",
+        category: "Full Stack Web App",
+        type: "web-app",
+        description: "A secure React web application featuring robust CRUD operations, role-based authentication, and efficient media handling.",
+        longDescription: "Campus Pulse is a full-stack web solution designed to streamline digital asset management. Built with a React frontend and a powerful Express/SQL backend, it delivers a secure environment for users to create, read, update, and delete authorized content.<br><br>The system implements industry-standard security measures including JWT-based authentication and protected routes. It efficiently handles complex data interactions through a RESTful API, supporting media uploads via Multer with automatic compression. The seamless integration with a cloud-hosted Render database and Vercel deployment ensures high availability and performance.",
+        features: [
+            "Protected Routes with JWT Authentication & Authorization",
+            "Full CRUD implementation with Express & SQL Backend",
+            "Advanced Media Handling (Multer & Image Compression)",
+            "Secure CORS configuration & Render DB Integration"
+        ],
+        image: "assets/Images/campus-pulse/home.gif",
+        tags: ["React", "Node.js", "SQL", "Full Stack"],
+        year: "2025",
+        duration: "2 Weeks",
+        links: {
+            live: "https://campus-pulse-plum.vercel.app/login",
+            github: "https://github.com/24045990CaseyRP/campus-pulse",
+            github_server: "https://github.com/24045990CaseyRP/campus-pulse_server"
+        }
+    },
+    {
         title: "Programming Fundamentals",
         category: "Web Development",
+        type: "web-app",
         description: "A curated personal showcase demonstrating the transition from foundational scripting to building modern web interfaces.",
         longDescription: "This project represents the foundation of my journey into Full-Stack Development. It is a curated personal showcase designed to demonstrate my transition from foundational scripting to building modern, user-centric web interfaces. <br><br>Rather than a basic \"homework\" page, I have focused on implementing a Modern Minimalist UI using professional development standards. This project serves as a live sandbox where I document my progress in mastering the core pillars of the web: HTML5, CSS3, and JavaScript.",
         features: [
@@ -151,7 +222,7 @@ const projectsData = [
         year: "2025",
         duration: "2 days",
         links: {
-            live: "#",
+            live: "https://learning-web-development-six.vercel.app/",
             github: "https://github.com/24045990CaseyRP/learning-web-development"
         }
     }
@@ -195,21 +266,36 @@ function createProjectCard(project, index) {
 }
 
 // Function to load and render projects
-async function loadProjects() {
+async function loadProjects(filter = 'all') {
     const projectsGrid = document.getElementById('projectsGrid');
     if (!projectsGrid) return;
 
     try {
-        const projects = projectsData;
+        const projects = projectsData.filter(project =>
+            filter === 'all' || project.type === filter
+        );
+
+        // Clear grid with fade out effect could be nice but keeping it simple for now
         projectsGrid.innerHTML = '';
 
+        if (projects.length === 0) {
+            projectsGrid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 2rem; color: var(--color-text-secondary);">No projects found in this category.</div>';
+            return;
+        }
+
         projects.forEach((project, index) => {
-            const projectCard = createProjectCard(project, index);
+            // Use original index for modal mapping
+            const originalIndex = projectsData.indexOf(project);
+            const projectCard = createProjectCard(project, originalIndex);
             projectsGrid.innerHTML += projectCard;
 
-            // Add stagger animation
+            // Add stagger animation using the current display index
             setTimeout(() => {
                 const cards = document.querySelectorAll('.project-card');
+                // We need to target the card we just added. 
+                // Since we append, it should be the last one, or we can select by data-index but that is original index.
+                // However, querySelectorAll returns all existing cards.
+                // The newly added card is at index 'index' of the CURRENT filtered list in the DOM.
                 if (cards[index]) {
                     cards[index].style.opacity = '0';
                     cards[index].style.transform = 'translateY(30px)';
@@ -249,7 +335,10 @@ window.openProjectModal = function (index) {
         linksHtml += `<a href="${project.links.live}" target="_blank" class="modal-btn modal-btn-primary">Live Demo ↗</a>`;
     }
     if (project.links.github && project.links.github !== '#') {
-        linksHtml += `<a href="${project.links.github}" target="_blank" class="modal-btn modal-btn-secondary">GitHub ⌨</a>`;
+        linksHtml += `<a href="${project.links.github}" target="_blank" class="modal-btn modal-btn-secondary">Client Repo ⌨</a>`;
+    }
+    if (project.links.github_server) {
+        linksHtml += `<a href="${project.links.github_server}" target="_blank" class="modal-btn modal-btn-secondary">Server Repo ⌨</a>`;
     }
 
     // Generate Features List
@@ -331,7 +420,23 @@ if (modal) {
 }
 
 // Load projects when page loads
-document.addEventListener('DOMContentLoaded', loadProjects);
+document.addEventListener('DOMContentLoaded', () => {
+    loadProjects();
+
+    // Filter Buttons Logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update active state
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Filter projects
+            const filterValue = btn.getAttribute('data-filter');
+            loadProjects(filterValue);
+        });
+    });
+});
 
 // ===================================
 // CONTACT FORM
